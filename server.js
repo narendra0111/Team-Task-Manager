@@ -15,13 +15,11 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/projects', require('./routes/projectRoutes'));
 app.use('/api/dashboard', require('./routes/dashboardRoutes'));
 
-// Serve frontend in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'client/dist')));
-  app.use((req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client', 'dist', 'index.html'));
-  });
-}
+// Serve frontend static files
+app.use(express.static(path.join(__dirname, 'client/dist')));
+app.use((req, res) => {
+  res.sendFile(path.resolve(__dirname, 'client', 'dist', 'index.html'));
+});
 
 // Database Connection
 const PORT = process.env.PORT || 5000;
