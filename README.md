@@ -47,11 +47,3 @@ This repository is configured as a monorepo for easy deployment to Railway.
    - `NODE_ENV` (Set to `production`)
 4. Railway will run `npm run build` (which builds the React client) and `npm start` (which starts the Express server and serves the React client statically).
 
-## Demo Video Instructions
-For the 2-5 minute demo video:
-1. Show the user registration and login flow.
-2. Create a project and explain how the creator becomes the 'Admin'.
-3. Show the Admin adding another user as a 'Member'.
-4. Create tasks and assign them to members.
-5. Log in as the member to show role-based restrictions and status updates.
-6. Display the dashboard statistics updating dynamically.
