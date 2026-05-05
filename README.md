@@ -1,5 +1,9 @@
 # Team Task Manager
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Railway-blueviolet?style=for-the-badge&logo=railway)](https://team-task-manager-production-e535.up.railway.app)
+
+🚀 **Live App:** [team-task-manager-production-e535.up.railway.app](https://team-task-manager-production-e535.up.railway.app)
+
 A Full-Stack Team Task Management Web Application built with the MERN stack (MongoDB, Express, React, Node.js).
 
 ## Features
